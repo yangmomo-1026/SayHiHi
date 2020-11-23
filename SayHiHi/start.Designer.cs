@@ -31,10 +31,11 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lab_CSharp = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.but_MyClas = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.but_POS = new System.Windows.Forms.Button();
             this.but_SayHi = new System.Windows.Forms.Button();
-            this.but_MyClas = new System.Windows.Forms.Button();
+            this.btn_loan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -82,6 +83,7 @@
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.splitContainer2.Panel1.Controls.Add(this.btn_loan);
             this.splitContainer2.Panel1.Controls.Add(this.but_MyClas);
             this.splitContainer2.Panel1.Controls.Add(this.button1);
             this.splitContainer2.Panel1.Controls.Add(this.but_POS);
@@ -93,6 +95,17 @@
             this.splitContainer2.Size = new System.Drawing.Size(800, 357);
             this.splitContainer2.SplitterDistance = 141;
             this.splitContainer2.TabIndex = 0;
+            // 
+            // but_MyClas
+            // 
+            this.but_MyClas.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.but_MyClas.Location = new System.Drawing.Point(23, 152);
+            this.but_MyClas.Name = "but_MyClas";
+            this.but_MyClas.Size = new System.Drawing.Size(105, 26);
+            this.but_MyClas.TabIndex = 3;
+            this.but_MyClas.Text = "My Clas";
+            this.but_MyClas.UseVisualStyleBackColor = true;
+            this.but_MyClas.Click += new System.EventHandler(this.but_MyClas_Click);
             // 
             // button1
             // 
@@ -127,16 +140,16 @@
             this.but_SayHi.UseVisualStyleBackColor = true;
             this.but_SayHi.Click += new System.EventHandler(this.but_SayHi_Click);
             // 
-            // but_MyClas
+            // btn_loan
             // 
-            this.but_MyClas.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.but_MyClas.Location = new System.Drawing.Point(23, 152);
-            this.but_MyClas.Name = "but_MyClas";
-            this.but_MyClas.Size = new System.Drawing.Size(105, 26);
-            this.but_MyClas.TabIndex = 3;
-            this.but_MyClas.Text = "My Clas";
-            this.but_MyClas.UseVisualStyleBackColor = true;
-            this.but_MyClas.Click += new System.EventHandler(this.but_MyClas_Click);
+            this.btn_loan.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btn_loan.Location = new System.Drawing.Point(23, 198);
+            this.btn_loan.Name = "btn_loan";
+            this.btn_loan.Size = new System.Drawing.Size(105, 26);
+            this.btn_loan.TabIndex = 4;
+            this.btn_loan.Text = "Loan";
+            this.btn_loan.UseVisualStyleBackColor = true;
+            this.btn_loan.Click += new System.EventHandler(this.btn_loan_Click);
             // 
             // start
             // 
@@ -168,5 +181,6 @@
         private System.Windows.Forms.Button but_POS;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button but_MyClas;
+        private System.Windows.Forms.Button btn_loan;
     }
 }

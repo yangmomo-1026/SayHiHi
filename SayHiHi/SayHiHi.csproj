@@ -88,7 +88,6 @@
     <Compile Include="Form_StudentForm.Designer.cs">
       <DependentUpon>Form_StudentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="listView1.cs" />
     <Compile Include="start.cs">
       <SubType>Form</SubType>
     </Compile>

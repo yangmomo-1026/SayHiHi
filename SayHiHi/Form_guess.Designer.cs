@@ -31,6 +31,7 @@
             this.lab_guess = new System.Windows.Forms.Label();
             this.btn_enter = new System.Windows.Forms.Button();
             this.btn_answer = new System.Windows.Forms.Button();
+            this.tb_guess = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lab_guess
@@ -46,7 +47,7 @@
             // btn_enter
             // 
             this.btn_enter.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn_enter.Location = new System.Drawing.Point(7, 78);
+            this.btn_enter.Location = new System.Drawing.Point(9, 115);
             this.btn_enter.Name = "btn_enter";
             this.btn_enter.Size = new System.Drawing.Size(95, 31);
             this.btn_enter.TabIndex = 1;
@@ -57,18 +58,27 @@
             // btn_answer
             // 
             this.btn_answer.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn_answer.Location = new System.Drawing.Point(127, 78);
+            this.btn_answer.Location = new System.Drawing.Point(129, 115);
             this.btn_answer.Name = "btn_answer";
             this.btn_answer.Size = new System.Drawing.Size(95, 31);
             this.btn_answer.TabIndex = 2;
             this.btn_answer.Text = "答案";
             this.btn_answer.UseVisualStyleBackColor = true;
+            this.btn_answer.Click += new System.EventHandler(this.btn_answer_Click);
+            // 
+            // tb_guess
+            // 
+            this.tb_guess.Location = new System.Drawing.Point(24, 68);
+            this.tb_guess.Name = "tb_guess";
+            this.tb_guess.Size = new System.Drawing.Size(182, 22);
+            this.tb_guess.TabIndex = 3;
             // 
             // Form_guess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(237, 123);
+            this.ClientSize = new System.Drawing.Size(237, 173);
+            this.Controls.Add(this.tb_guess);
             this.Controls.Add(this.btn_answer);
             this.Controls.Add(this.btn_enter);
             this.Controls.Add(this.lab_guess);
@@ -84,5 +94,6 @@
         private System.Windows.Forms.Label lab_guess;
         private System.Windows.Forms.Button btn_enter;
         private System.Windows.Forms.Button btn_answer;
+        private System.Windows.Forms.TextBox tb_guess;
     }
 }

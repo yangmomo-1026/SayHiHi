@@ -44,5 +44,11 @@ namespace SayHiHi
             Form_MyClac myClac = new Form_MyClac();
             myClac.Show();
         }
+
+        private void btn_loan_Click(object sender, EventArgs e)
+        {
+            Form_loan loan = new Form_loan();
+            loan.Show();
+        }
     }
 }
